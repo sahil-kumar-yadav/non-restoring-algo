@@ -39,13 +39,27 @@ export function nonRestoringDivision(dividend, divisor) {
             Q |= 1;
             quotientBit = "1";
         }
-        steps.push({ N: i, M: binout(M, maxBits), A: binout(A, maxBits), Q: binout(Q, maxBits), QuotientBit: quotientBit, Operation: operation });
+        steps.push({
+            N: i,
+            M: binout(M, maxBits),
+            A: binout(A, maxBits),
+            Q: binout(Q, maxBits),
+            QuotientBit: quotientBit,
+            Operation: operation
+        });
     }
-    
-    // Restoration step if remainder is negative
+
+    // Final restoration step
     if (A & (1 << (maxBits - 1))) {
         A += M;
-        steps.push({ N: "Restoration", M: binout(M, maxBits), A: binout(A, maxBits), Q: binout(Q, maxBits), QuotientBit: "", Operation: "Restoring A" });
+        steps.push({
+            N: "Restoration",
+            M: binout(M, maxBits),
+            A: binout(A, maxBits),
+            Q: binout(Q, maxBits),
+            QuotientBit: "",
+            Operation: "Restoring A"
+        });
     }
 
     return steps;
