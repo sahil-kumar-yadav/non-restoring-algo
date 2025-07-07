@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧮 Non-Restoring Division Visualizer
 
-## Getting Started
+An interactive visual tool built with **React**, **Framer Motion**, and **Tailwind CSS** that demonstrates the step-by-step execution of the **Non-Restoring Division Algorithm** in binary.
 
-First, run the development server:
+![screenshot](https://via.placeholder.com/1000x300?text=Insert+your+project+screenshot+here)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Features
+
+* 🔢 **Binary Division**: Input any two integers and see how non-restoring division works internally.
+* 📊 **Step-by-Step Table**: View each stage of the algorithm in a clean tabular format.
+* 🎞 **Animated Registers**: Watch how A, Q, and M registers evolve in real-time.
+* 🧠 **Final Output**: Displays the final quotient and remainder in decimal form.
+
+---
+
+## 🚀 Live Demo
+
+> [🔗 Click here to try the app](#)
+> *(Replace with your deployment URL, e.g., Vercel, Netlify)*
+
+---
+
+## 📷 Preview
+
+![preview](https://via.placeholder.com/1000x600?text=Live+Preview+GIF+or+Screenshot)
+
+---
+
+## 📦 Tech Stack
+
+* ⚛️ **React** – Core frontend framework
+* 🎨 **Tailwind CSS** – Utility-first styling
+* 🎞 **Framer Motion** – Smooth animations and transitions
+* 🧮 **Custom Algorithm** – Implementation of the Non-Restoring Division logic
+
+---
+
+## 🛠️ How It Works
+
+The non-restoring division algorithm is used for binary division of signed numbers. It uses subtraction and conditional addition depending on the sign of the accumulator.
+
+### Registers Involved:
+
+* **A** – Accumulator
+* **Q** – Quotient Register
+* **M** – Divisor Register
+
+### Operations Tracked:
+
+* Shift left operations
+* Conditional add/subtract
+* Setting quotient bits
+* Restoration steps if needed
+
+Each step is animated to help students and engineers understand what’s going on under the hood.
+
+---
+
+## 📂 File Structure
+
+```
+├── app/
+│   ├── page.tsx         # Main component
+│   └── utils/
+│       └── nonRestoringAlgo.js  # Core algorithm logic
+├── public/
+│   └── assets/          # Screenshots, GIFs, etc.
+├── styles/
+│   └── globals.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🧪 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🖥 Local Setup
 
-## Learn More
+```bash
+# Clone the repo
+git clone https://github.com/your-username/non-restoring-division.git
 
-To learn more about Next.js, take a look at the following resources:
+# Navigate into the project folder
+cd non-restoring-division
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Install dependencies
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Start the dev server
+npm run dev
+```
 
-## Deploy on Vercel
+Then go to `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧠 Educational Value
+
+This tool is perfect for:
+
+* 📘 CS students learning binary arithmetic
+* 🧑‍🏫 Teachers demonstrating CPU division algorithms
+* 🔍 Curious developers wanting to see binary math in action
+
+---
+
+## 🙌 Contributing
+
+PRs and suggestions are welcome! Feel free to open an issue for feature requests or bugs.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👤 Author
+
+**Your Name**
+🔗 [GitHub](https://github.com/your-username)
+🔗 [LinkedIn](https://linkedin.com/in/your-profile)
+
+
